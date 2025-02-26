@@ -5,19 +5,19 @@
 ## Project Setup
 ## wardrobe-frontend
     git clone the repository 
- ## cd wardrobe-frontend 
-   ## npm install 
-   ## npm run dev
+    cd wardrobe-frontend 
+    npm install 
+    npm run dev
 
  ## To run to the backend server(it is  a folder in this project named backend, Although it can be found separately at this link https://github.com/stephenonchieku1/wardrobe-backend )
-  ## cd backend 
-   ## composer install
-   ## php artisan migrate
-   ## php artisan db:seed
-   ## php artisan serve
+    cd backend 
+    composer install
+    php artisan migrate
+    php artisan db:seed
+    php artisan serve
 
 
-Sample schreenshots
+Sample screenshots
 
 ![image](https://github.com/user-attachments/assets/45bba2eb-5836-4fac-8647-28ba4d83abdf)
 
