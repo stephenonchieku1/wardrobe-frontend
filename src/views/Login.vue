@@ -45,6 +45,7 @@
 import { defineComponent, ref } from 'vue';
 import { useStore } from 'vuex';
 import { useRouter } from 'vue-router';
+import axios from 'axios';
 
 export default defineComponent({
   name: 'Login',
@@ -57,29 +58,36 @@ export default defineComponent({
     const loading = ref(false);
     const error = ref('');
 
-    const login = async () => {
-      try {
-        loading.value = true;
-        await store.dispatch('login', {
-          email: email.value,
-          password: password.value
-        });
-        router.push({ name: 'Home' });
-      } catch (err: any) {
-        error.value = err.response?.data?.message || 'Failed to login';
-      } finally {
-        loading.value = false;
-      }
-    };
+  const login = async () => {
+  try {
+    loading.value = true;
+    error.value = '';
+
+    const response = await axios.post('http://localhost:8000/api/login', {
+      email: email.value,
+      password: password.value,
+    });
+
+    localStorage.setItem('token', response.data.token);
+
+    store.commit('SET_USER', response.data.user);
+
+    router.push({ name: 'Home' });
+  } catch (err: any) {
+    error.value = err.response?.data?.message || 'Failed to login. Please try again.';
+  } finally {
+    loading.value = false;
+  }
+};
 
     return {
       email,
       password,
       loading,
       error,
-      login
+      login,
     };
-  }
+  },
 });
 </script>
 
