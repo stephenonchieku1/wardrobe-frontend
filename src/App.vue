@@ -26,7 +26,9 @@ header {
   line-height: 1.5;
   max-height: 100vh;
 }
-
+.app{
+  background-color: white;
+}
 .logo {
   display: block;
   margin: 0 auto 2rem;
@@ -57,6 +59,6 @@ nav a:hover {
 
 nav a.router-link-exact-active {
   color: #007bff;
-  background-color: #e9ecef; 
+  background-color: #e9ecef;
 }
 </style>
