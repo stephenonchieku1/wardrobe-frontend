@@ -17,6 +17,11 @@
    ## php artisan serve
 
 
+Sample schreenshots
 
+![image](https://github.com/user-attachments/assets/45bba2eb-5836-4fac-8647-28ba4d83abdf)
 
+![image](https://github.com/user-attachments/assets/c277e588-af47-46a1-bc68-88b704e1a07f)
+![image](https://github.com/user-attachments/assets/f4286f96-331f-44eb-a121-5a67da76bbf7)
+![image](https://github.com/user-attachments/assets/768e467a-2cb7-4740-89ae-bc7d30a07508)
 
