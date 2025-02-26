@@ -67,6 +67,7 @@
 import { defineComponent, ref } from 'vue';
 import { useStore } from 'vuex';
 import { useRouter } from 'vue-router';
+import axios from 'axios';
 
 export default defineComponent({
   name: 'Register',
@@ -89,15 +90,18 @@ export default defineComponent({
 
       try {
         loading.value = true;
-        await store.dispatch('register', {
+        const response = await axios.post('http://localhost:8000/api/signin', {
           name: name.value,
           email: email.value,
           password: password.value,
           password_confirmation: password_confirmation.value
         });
+
+        console.log('Registration successful:', response.data);
         router.push({ name: 'Home' });
       } catch (err: any) {
         error.value = err.response?.data?.message || 'Failed to register';
+        console.error('Registration error:', err.response?.data);
       } finally {
         loading.value = false;
       }
