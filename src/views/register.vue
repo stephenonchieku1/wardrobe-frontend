@@ -141,10 +141,12 @@ export default defineComponent({
 h1 {
   margin-bottom: 24px;
   text-align: center;
+  color: black;
 }
 
 .form-group {
   margin-bottom: 16px;
+  color: black;
 }
 
 label {

@@ -182,7 +182,7 @@ const deleteItem = async (id) => {
         Authorization: `Bearer ${localStorage.getItem('token')}`,
       },
     });
-    await fetchClothingItems(); 
+    await fetchClothingItems();
   } catch (err) {
     console.error('Error deleting item:', err);
     alert('Failed to delete item. Please try again.');
@@ -266,6 +266,6 @@ onMounted(() => {
   text-align: center;
   padding: 20px;
   font-size: 18px;
-  color: #666;
+  color: black;
 }
 </style>

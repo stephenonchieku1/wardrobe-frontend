@@ -286,7 +286,7 @@ const confirmDelete = (id, name) => {
   font-weight: 500;
   display: flex;
   justify-content: flex-end;
-  color: #4a5568;
+  color: black;
 }
 
 .items-grid {
@@ -313,11 +313,13 @@ const confirmDelete = (id, name) => {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: black;
 }
 
 .item-header h3 {
   margin: 0;
   font-size: 18px;
+  color: black;
 }
 
 .category-badge {
@@ -343,6 +345,7 @@ const confirmDelete = (id, name) => {
 .item-details {
   padding: 15px;
   flex-grow: 1;
+  color: black;
 }
 
 .item-details p {
@@ -413,7 +416,7 @@ const confirmDelete = (id, name) => {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
   display: flex;
   justify-content: center;
   align-items: center;
