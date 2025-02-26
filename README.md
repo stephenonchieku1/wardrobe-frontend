@@ -4,7 +4,7 @@
 
 ## Project Setup
 ## wardrobe-frontend
-## git clone the repository 
+    git clone the repository 
  ## cd wardrobe-frontend 
    ## npm install 
    ## npm run dev
