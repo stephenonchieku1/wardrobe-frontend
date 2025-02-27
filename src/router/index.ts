@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '@/views/HomeView.vue';
-import AddClothingItem from '@/components/AddClothingItem.vue';
 import EditClothingItem from '@/components/EditClothingItem.vue';
-import Login from '@/views/Login.vue';
-import Register from '@/views/register.vue';
+import AddClothingItem from '@/components/AddClothingItem.vue';
 
+import Login from '@/views/Login.vue';
+import Register from '@/views/Register.vue';
 
 const routes = [
   { path: '/',name: 'Home' ,component: HomeView },
