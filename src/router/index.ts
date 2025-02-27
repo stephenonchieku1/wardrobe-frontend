@@ -4,7 +4,7 @@ import EditClothingItem from '@/components/EditClothingItem.vue';
 import AddClothingItem from '@/components/AddClothingItem.vue';
 
 import Login from '@/views/Login.vue';
-import Register from '@/views/Register.vue';
+import Register from '@/views/register.vue';
 
 const routes = [
   { path: '/',name: 'Home' ,component: HomeView },
